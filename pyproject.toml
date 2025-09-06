@@ -1,0 +1,16 @@
+[project]
+name = "hello-agent-assignment"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "load-dotenv>=0.1.0",
+    "openai>=1.106.1",
+    "openai-agents>=0.2.11",
+]
+
+[tool.uv.workspace]
+members = [
+    "packaged_agents",
+]
